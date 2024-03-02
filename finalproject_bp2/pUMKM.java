@@ -49,8 +49,9 @@ public class pUMKM {
                             }
                             break;
                         case 3:
+                            sc = new Scanner(System.in);
                             System.out.print("  Nama: ");
-                            nm=sc.next();
+                            nm=sc.nextLine();
                             if(nm.equalsIgnoreCase(p.getNama())){
                                 System.out.println("  Yakin Hapus?");
                                 System.out.println("  1. Ya");
@@ -80,7 +81,7 @@ public class pUMKM {
                     System.out.println("  1.Nama ");
                     System.out.println("  2.Alamat");
                     System.out.println("  3.Detail");
-                    System.out.print("  Pilih: ");
+                    System.out.print("  Pilih = ");
                     int pilih3=sc.nextInt();
                     switch(pilih3){
                         case 1:
@@ -103,14 +104,14 @@ public class pUMKM {
                     System.out.println("  [Transaksi]");
                     System.out.println("  1.Buat Pesanan");
                     System.out.println("  2.Detail Pesanan");
-                    System.out.print("  Pilih: ");
+                    System.out.print("  Pilih = ");
                     int pilih4=sc.nextInt();
                     switch(pilih4){
                         case 1:
                             sc=new Scanner(System.in);
                             System.out.println("  Produk yang tersedia: ");
                             System.out.println("  ~ "+p.ToString());
-                            System.out.print("  Pilih: ");
+                            System.out.print("  Pilih = ");
                             String psn=sc.nextLine();
                             if(psn.equalsIgnoreCase(p.getNama())){
                                 System.out.print("  Jumlah: ");
